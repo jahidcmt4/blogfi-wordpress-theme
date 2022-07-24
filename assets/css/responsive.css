@@ -1,0 +1,16 @@
+@media all and (max-width: 991px){
+	.menu ul li{
+		padding: 0px !important;
+	}
+	.menu ul li a{
+		display: block;
+		padding: 10px 10px;
+	}
+}
+@media all and (max-width: 767px){
+	.top-contact,
+	.social-profile{
+		text-align: center;
+		width: 100%;
+	}
+}
