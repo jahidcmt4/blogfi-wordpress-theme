@@ -11,7 +11,7 @@ Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: blogfi
-Tags: blog, news, right-sidebar, custom-background, blog site, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: blog, news, right-sidebar, custom-background, custom header, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
 /* Box sizing
@@ -272,8 +272,7 @@ textarea {
 }
 
 
-/*header-top-area-css-start*/
-/*header-top-area-css-start*/
+/*header-top-area-css*/
 
 .header-top-area{
 	background-color: #706fd3;
@@ -302,11 +301,8 @@ textarea {
 	margin-right: 5px;
 }
 
-/*header-top-area-css-end*/
-/*header-top-area-css-end*/
 
-/*header-area-css-start*/
-/*header-area-css-start*/
+/*header-area-css*/
 
 .header-area {
     background: #fff;
@@ -377,8 +373,8 @@ a.logo{
 }
 
 
-/*header-area-css-end*/
-/*header-area-css-end*/
+/*body css*/
+
 .body-content{
 	padding: 30px 0px;
 }
@@ -387,7 +383,6 @@ a.logo{
 }
 .single-news img{
 	width: 100%;
-	height: 220px;
 }
 .single-news h4{
 	color: #22416D;
@@ -509,7 +504,8 @@ a.logo{
     margin-bottom: 20px;
 }
 
-/*single page*/
+/*single page css*/
+
 .page-header h1 {
   font-size: 32px;
   font-weight: 600;
@@ -566,6 +562,12 @@ a.logo{
   padding-left: 15px;
   margin-top: 20px;
 }
+.navigation.posts-navigation .nav-links .nav-previous{
+	float: left;
+}
+.navigation.posts-navigation .nav-links .nav-next{
+	float: right;
+}
 .navigation.posts-navigation .nav-links a {
   background: #706fd3;
   border: 1px solid #706fd3;
@@ -599,8 +601,8 @@ a.logo{
 }
 
 
-/* footer-area-css-start */
-/* footer-area-css-start */
+/* footer-area-css */
+/* footer-area-css */
 
 .footer-area{
 	background-color: #706fd3;
@@ -614,7 +616,4 @@ a.logo{
 }
 
 
-
-/* footer-area-css-end */
-/* footer-area-css-end */
 

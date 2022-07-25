@@ -1,0 +1,194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogfi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-25 15:04+0000\n"
+"PO-Revision-Date: 2022-07-25 15:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.1\n"
+"X-Domain: blogfi"
+
+#: header.php:45 header.php:57
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: inc/customizer.php:81
+msgid "+2808272282"
+msgstr "+2808272282"
+
+#: inc/class-wp-bootstrap-navwalker.php:368
+msgid "Add a menu"
+msgstr "Add a menu"
+
+#: functions.php:136
+msgid "Add widgets here."
+msgstr "Add widgets here."
+
+#. Name of the theme
+msgid "Blogfi"
+msgstr "Blogfi"
+
+#. Description of the theme
+msgid ""
+"Blogfi is a simle blog theme built with Bootstrap.This theme is fully "
+"responsive, and easy to Customize for your any kinds of Blog like travel, "
+"food, lifestyle, photography, personal, sports, news and many more. Theme is "
+"SEO friendly and suitable for all kinds of blogging websites."
+msgstr ""
+"Blogfi is a simle blog theme built with Bootstrap.This theme is fully "
+"responsive, and easy to Customize for your any kinds of Blog like travel, "
+"food, lifestyle, photography, personal, sports, news and many more. Theme is "
+"SEO friendly and suitable for all kinds of blogging websites."
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#. 1: comment count number, 2: title.
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s thoughts on &ldquo;%2$s&rdquo;"
+
+#: inc/customizer.php:73
+msgid "Contact Option"
+msgstr "Contact Option"
+
+#: footer.php:23
+#, php-format
+msgid "Copyright %s © Blogfi All Rights Reserved."
+msgstr "Copyright %s © Blogfi All Rights Reserved."
+
+#: inc/customizer.php:40
+msgid "Global Modifications like social Profile and Contact info"
+msgstr "Global Modifications like social Profile and Contact info"
+
+#: inc/customizer.php:39
+msgid "Global Options"
+msgstr "Global Options"
+
+#. Author URI of the theme
+msgid "https://profiles.wordpress.org/jahidcse/"
+msgstr "https://profiles.wordpress.org/jahidcse/"
+
+#: inc/customizer.php:127
+msgid "https://www.facebook.com/"
+msgstr "https://www.facebook.com/"
+
+#: inc/customizer.php:134
+msgid "https://www.twitter.com/"
+msgstr "https://www.twitter.com/"
+
+#: inc/customizer.php:141
+msgid "https://www.youtube.com/"
+msgstr "https://www.youtube.com/"
+
+#: inc/customizer.php:89
+msgid "info@yourmail.com"
+msgstr "info@yourmail.com"
+
+#: 404.php:24
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+
+#. Author of the theme
+msgid "jahidcse"
+msgstr "jahidcse"
+
+#: single.php:27
+msgid "Next:"
+msgstr "Next:"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#. 1: title.
+#: comments.php:33
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "One thought on &ldquo;%1$s&rdquo;"
+
+#: 404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! That page can&rsquo;t be found."
+
+#: template-parts/content-page.php:32
+msgid "Pages:"
+msgstr "Pages:"
+
+#: template-parts/content-single.php:24 template-parts/content-search.php:27 
+#: template-parts/content.php:27
+#, php-format
+msgctxt "post date"
+msgid "on %s"
+msgstr "on %s"
+
+#: single.php:26
+msgid "Previous:"
+msgstr "Previous:"
+
+#: functions.php:52
+msgid "Primary"
+msgstr "Primary"
+
+#: template-parts/content-search.php:35 template-parts/content.php:35
+msgid "Read More"
+msgstr "Read More"
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#. %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: functions.php:134
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: inc/customizer.php:118
+msgid "Social Profile"
+msgstr "Social Profile"
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+
+#: inc/customizer.php:47
+msgid "Top Header"
+msgstr "Top Header"

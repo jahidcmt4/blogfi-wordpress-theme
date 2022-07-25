@@ -1,7 +1,7 @@
 === Blogfi ===
 
 Contributors: jahidcse
-Tags: blog, news, right-sidebar, custom-background, blog site, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: blog, news, right-sidebar, custom-background, custom header, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 5.0
 Tested up to: 6.0.1
