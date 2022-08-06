@@ -144,11 +144,16 @@ function blogfi_widgets_init() {
 add_action( 'widgets_init', 'blogfi_widgets_init' );
 
 /**
+ * Include webfont-loader
+ */
+require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+
+/**
  * Enqueue scripts and styles.
  */
 function blogfi_scripts() {
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap', array(), BLOGFI_VERSION, 'all' );
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/fontawesome.min.css', array(), BLOGFI_VERSION, 'all' );
+	wp_enqueue_style( 'google-fonts', wptt_get_webfont_url( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap' ), array(), BLOGFI_VERSION, 'all' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), BLOGFI_VERSION, 'all' );
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), BLOGFI_VERSION, 'all' );
 	wp_enqueue_style( 'blogfi-style', get_stylesheet_uri(), array(), BLOGFI_VERSION, 'all' );
 	wp_enqueue_style( 'responsive-css', get_template_directory_uri() . '/assets/css/responsive.css', array(), BLOGFI_VERSION, 'all' );

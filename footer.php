@@ -20,7 +20,7 @@
           <p>
             <?php
                 $current_year = date('Y');
-                printf( esc_html__( 'Copyright %s © Blogfi All Rights Reserved.', 'blogfi'), esc_html($current_year));
+                printf( esc_html__( 'Copyright %s © Blogfi by %s All Rights Reserved.', 'blogfi'), esc_html($current_year),'<a href="https://profile.wordpress.org/jahidcse">Jahid Hasan</a>');
             ?>
           </p>
         </div>

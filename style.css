@@ -4,14 +4,14 @@ Theme URI:
 Author: jahidcse
 Author URI: https://profiles.wordpress.org/jahidcse/
 Description: Blogfi is a simle blog theme built with Bootstrap.This theme is fully responsive, and easy to Customize for your any kinds of Blog like travel, food, lifestyle, photography, personal, sports, news and many more. Theme is SEO friendly and suitable for all kinds of blogging websites.
-Version: 1.0.0
+Version: 1.0.2
 Requires at least: 5.0
-Tested up to: 6.0.1
+Tested up to: 6.0
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: blogfi
-Tags: blog, news, right-sidebar, custom-background, custom header, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: blog, news, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
 /* Box sizing
@@ -271,6 +271,225 @@ textarea {
 	width: 100%;
 }
 
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+    display: inline-block;
+}
+
+.comment-list .comment img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comments-area li.comment {
+    margin-top: 20px;
+    border-bottom: 2px dashed #706fd3;;
+    padding-bottom: 20px;
+}
+
+.comments-area li.comment .reply {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.comments-area li.comment .comment-metadata a {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.widget h2 {
+    padding: 10px;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 28px;
+}
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*='wp-image-'] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+/* Galleries
+--------------------------------------------- */
+.gallery {
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-gap: 1.5em;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.gallery-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+    display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex='-1']:focus {
+    outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+    /*rtl:ignore*/
+    float: left;
+
+    /*rtl:ignore*/
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.alignright {
+    /*rtl:ignore*/
+    float: right;
+
+    /*rtl:ignore*/
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
+
+/* Comments */
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
 
 /*header-top-area-css*/
 
@@ -322,9 +541,7 @@ a.logo{
 	font-size: 36px;
 }
 
-.navbar button:focus{
-	outline: none;
-}
+
 .menu ul{
 	margin: 0;
 	padding: 0;
@@ -353,9 +570,7 @@ a.logo{
 .menu ul li.nav-item.show a{
 	background: transparent !important;
 }
-.menu ul li a:focus{
-	outline: none;
-}
+
 .menu ul li a span{
     color: #706fd3;
 }
@@ -375,11 +590,22 @@ a.logo{
 
 /*body css*/
 
+body .entry-content a, 
+body .post-standard__content a, 
+body .comment-content a, 
+.wp-block-latest-comments a, 
+.widget_text a {
+  text-decoration: underline !important;
+}
+
 .body-content{
 	padding: 30px 0px;
 }
 .single-news{
 	margin: 10px 0px;
+}
+.single-news > a{
+	display: block;
 }
 .single-news img{
 	width: 100%;
@@ -420,7 +646,7 @@ a.logo{
 	margin: 5px 0px;
 }
 .single-news p a{
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 .single-news a.readme{
 	text-decoration: none;
@@ -492,7 +718,7 @@ a.logo{
 .wp-block-latest-comments a:hover,
 .recentcomments a:hover {
     color: #121212;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .comment-content ol li {
@@ -538,7 +764,12 @@ a.logo{
     border-radius: 50%;
     margin-right: 15px;
 }
-
+.comment-content p a,
+.comment-content a,
+.widget.widget_text p a,
+.widget.widget_text a{
+	text-decoration: underline !important;
+}
 .comments-area li.comment {
     margin-top: 20px;
     border-bottom: 2px dotted #ddd;;
@@ -614,6 +845,10 @@ a.logo{
 	text-transform: capitalize;
 	font-weight: 500;
 }
+.footer p a{
+	text-decoration: underline !important;
+}
+
 
 
 
