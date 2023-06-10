@@ -850,5 +850,20 @@ body .comment-content a,
 }
 
 
+/* woocommerce compability */
 
+.woocommerce form .form-row, .woocommerce-page form .form-row {
+  display: flow-root !important;
+}
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  float: left !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+  float: right !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
 
+/* woocommerce compability */
