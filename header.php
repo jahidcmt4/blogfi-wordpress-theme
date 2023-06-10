@@ -39,7 +39,7 @@
               <div class="top-contact">
                 <ul>
                   <?php
-                  $blogfi_email = get_theme_mod('blogfi_email_field');
+                  $blogfi_email = !empty(get_theme_mod('blogfi_email_field')) ? get_theme_mod('blogfi_email_field') : __("+2808272282","blogfi");
                   if ($blogfi_email) { ?>
                     <li><i class="fa fa-envelope"></i>
                       <?php
@@ -51,7 +51,7 @@
                     </li>
                   <?php } ?>
                   <?php
-                  $blogfi_phone = get_theme_mod('blogfi_phone_field');
+                  $blogfi_phone = !empty( get_theme_mod('blogfi_phone_field') ) ? get_theme_mod('blogfi_phone_field') : __("info@yourmail.com","blogfi");
                   if ($blogfi_phone) { ?>
                     <li><i class="fa fa-phone"></i>
                       <?php
@@ -70,17 +70,17 @@
               <div class="social-profile">
                 <ul>
                   <?php
-                  $blogfi_facebook_url = get_theme_mod('blogfi_facebook_field');
+                  $blogfi_facebook_url = !empty(get_theme_mod('blogfi_facebook_field')) ? get_theme_mod('blogfi_facebook_field') : esc_html("https://www.facebook.com/");
                   if ($blogfi_facebook_url) { ?>
                     <li><a href="<?php echo $blogfi_facebook_url; ?>"><i class="fa fa-facebook"></i></a></li>
                   <?php } ?>
                   <?php
-                  $blogfi_twitter_url = get_theme_mod('blogfi_twitter_field');
+                  $blogfi_twitter_url = !empty(get_theme_mod('blogfi_twitter_field')) ? get_theme_mod('blogfi_twitter_field') : esc_html("https://www.twitter.com/");
                   if ($blogfi_twitter_url) { ?>
                     <li><a href="<?php echo $blogfi_twitter_url; ?>"><i class="fa fa-twitter"></i></a></li>
                   <?php } ?>
                   <?php
-                  $blogfi_youtube_url = get_theme_mod('blogfi_youtube_field');
+                  $blogfi_youtube_url = !empty(get_theme_mod('blogfi_youtube_field')) ? get_theme_mod('blogfi_youtube_field') : esc_html("https://www.youtube.com/");
                   if ($blogfi_youtube_url) { ?>
                     <li><a href="<?php echo $blogfi_youtube_url; ?>"><i class="fa fa-youtube"></i></a></li>
                   <?php } ?>

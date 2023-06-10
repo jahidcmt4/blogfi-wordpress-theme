@@ -6,7 +6,7 @@ Tags: blog, news, right-sidebar, custom-background, custom-logo, custom-menu, fe
 Requires at least: 5.0
 Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,11 @@ Yes.
 No.
 
 == Changelog ==
+
+
+= 1.0.3  =
+* Design Panel Added
+* Top Header Issue fixed
 
 = 1.0.0  =
 * Initial release

@@ -36,10 +36,286 @@ function blogfi_customize_register( $wp_customize ) {
 	$wp_customize->add_panel( 'blogfi_global_options', 
 	    array(
 	        'priority'       => 50,
-	        'title'            => __( 'Global Options', 'blogfi' ),
-	        'description'      => __( 'Global Modifications like social Profile and Contact info', 'blogfi' ),
+	        'title'            => __( 'Blogfi Options', 'blogfi' ),
+	        'description'      => __( 'Global Modifications and Styles, Everything you Need.', 'blogfi' ),
 	    ) 
 	);
+
+	// Global Style
+
+	$wp_customize->add_section( 'blogfi_global_styles', 
+	    array(
+	        'title'         => __( 'Global Styles', 'blogfi' ),
+	        'priority'      => 4,
+	        'panel'         => 'blogfi_global_options'
+	    ) 
+	);
+
+	// Site Title Color
+	$wp_customize->add_setting( 'blogfi_site_title_color',
+	    array(
+			'default'           => '#706fd3',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_site_title_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_global_styles',
+	        'label'       => 'Site Title Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Link Color
+	$wp_customize->add_setting( 'blogfi_link_color',
+	    array(
+			'default'           => '#800080',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_link_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_global_styles',
+	        'label'       => 'Link Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Blog Title Color
+	$wp_customize->add_setting( 'blogfi_title_color',
+	    array(
+			'default'           => '#22416D',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_title_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_global_styles',
+	        'label'       => 'Blog Title Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Blog Details Color
+	$wp_customize->add_setting( 'blogfi_desc_color',
+	    array(
+			'default'           => '#212529',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_desc_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_global_styles',
+	        'label'       => 'Blog Details Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Blog Author and Publish Color
+	$wp_customize->add_setting( 'blogfi_pub_color',
+	    array(
+			'default'           => '#706fd3',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_pub_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_global_styles',
+	        'label'       => 'Blog Publish & Author',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Header footer Style
+
+	$wp_customize->add_section( 'blogfi_header_footer_style', 
+	    array(
+	        'title'         => __( 'Header & Footer Style', 'blogfi' ),
+	        'priority'      => 5,
+	        'panel'         => 'blogfi_global_options'
+	    ) 
+	);
+	// Header footer Background
+	$wp_customize->add_setting( 'blogfi_header_footer_bg',
+	    array(
+			'default'           => '#706fd3',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_header_footer_bg', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_header_footer_style',
+	        'label'       => 'Header & Footer Background',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Header footer Color
+	$wp_customize->add_setting( 'blogfi_header_footer_color',
+	    array(
+			'default'           => '#fff',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_header_footer_color', 
+	    array(
+	        'priority'    => 11,
+	        'section'     => 'blogfi_header_footer_style',
+	        'label'       => 'Header & Footer Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Widget Style
+
+	$wp_customize->add_section( 'blogfi_widget_styles', 
+	    array(
+	        'title'         => __( 'Sidebar Widget Styles', 'blogfi' ),
+	        'priority'      => 6,
+	        'panel'         => 'blogfi_global_options'
+	    ) 
+	);
+
+	// Sidebar Widget Background
+	$wp_customize->add_setting( 'blogfi_widget_bg',
+	    array(
+			'default'           => '#fff',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_widget_bg', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_widget_styles',
+	        'label'       => 'Widget Background',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Sidebar Widget Title Background
+	$wp_customize->add_setting( 'blogfi_widget_title_bg',
+	    array(
+			'default'           => '#706fd3',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_widget_title_bg', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_widget_styles',
+	        'label'       => 'Widget Title Background',
+			'type'		  => 'color'
+	    )
+	);
+	// Sidebar Widget Title Color
+	$wp_customize->add_setting( 'blogfi_widget_title_color',
+	    array(
+			'default'           => '#fff',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_widget_title_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_widget_styles',
+	        'label'       => 'Widget Title Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// button Style
+
+	$wp_customize->add_section( 'blogfi_button_styles', 
+	    array(
+	        'title'         => __( 'Button Styles', 'blogfi' ),
+	        'priority'      => 7,
+	        'panel'         => 'blogfi_global_options'
+	    ) 
+	);
+	// Button Background
+	$wp_customize->add_setting( 'blogfi_button_bg',
+	    array(
+			'default'           => '#706fd3',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_button_bg', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_button_styles',
+	        'label'       => 'Regular Button Background',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Button Color
+	$wp_customize->add_setting( 'blogfi_button_color',
+	    array(
+			'default'           => '#fff',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_button_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_button_styles',
+	        'label'       => 'Regular Button Color',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Button Hover Background
+	$wp_customize->add_setting( 'blogfi_button_hover_bg',
+	    array(
+			'default'           => '#000',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_button_hover_bg', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_button_styles',
+	        'label'       => 'Hover Button Background ',
+			'type'		  => 'color'
+	    )
+	);
+
+	// Button Color
+	$wp_customize->add_setting( 'blogfi_button_hover_color',
+	    array(
+			'default'           => '#fff',
+			'sanitize_callback' => 'sanitize_hex_color',
+	        'transport'         => 'refresh',
+	    )
+	);
+	$wp_customize->add_control( 'blogfi_button_hover_color', 
+	    array(
+	        'priority'    => 10,
+	        'section'     => 'blogfi_button_styles',
+	        'label'       => 'Hover Button Color',
+			'type'		  => 'color'
+	    )
+	);
+
 
 	// Top Header
 	$wp_customize->add_section( 'blogfi_top_header_options', 
